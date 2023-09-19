@@ -3,7 +3,7 @@
 
 OpenDark Theme Preference Pack for [FreeCAD](https://www.freecadweb.org)
 
-This is an color-impaired accessible aesthetically pleasing theme for FreeCAD based on the [Open-Color Palette] (https://github.com/yeun/open-color)
+This is an color-impaired accessible aesthetically pleasing theme for FreeCAD based on the [Open-Color Palette](https://github.com/yeun/open-color)
 
 
 ## Installation
