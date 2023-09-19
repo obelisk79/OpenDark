@@ -1,4 +1,4 @@
-# OpenDarkThemePreferencePack
+# OpenDark
 ![Colours](resources/icons/OpenDark.png)
 
 OpenDark Theme Preference Pack for [FreeCAD](https://www.freecadweb.org)
