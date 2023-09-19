@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<package format="1" xmlns="https://wiki.freecad.org/Package_Metadata">
+ <name>FreeCAD Dark</name>
+ <version>2023.09.14</version>
+ <date>2023.09.14</date>
+ <description>An accessible and coordinated Dark theme for FreeCAD</description>
+ <maintainer email="nomail@freecad.org">Obelisk79</maintainer>
+ <license file="LICENSE">GPLv3</license>
+ <url type="repository" branch="main">https://github.com/Obelisk79/FreeCAD_Dark</url>
+ <icon>resources/icons/FreeCAD_Dark.svg</icon>
+
+<content>
+  <preferencepack>
+    <name>FreeCAD_Dark</name>
+    <description>An accessible and coordinated Dark theme for FreeCAD</description>
+    <tag>2023</tag>
+    <tag>theme</tag>
+    <tag>dark</tag>
+    <file>FreeCAD_Dark.qss</file>
+  </preferencepack>
+  <workbench>
+    <name>QtNormalizer</name>
+    <description>Sets Qt Widget visual style to normalize appearance across disparate compute r platforms</description>
+    <classname>QtNormalizer</classname>
+  </workbench>
+</content>
+</package>
