@@ -1,23 +1,18 @@
-# ExtremeProDark
-Build from the ground up, complete new. Has all current bug fixes. So if you find a new one please report them!
-![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/resources/icons/ExtremeProDark_200x200.png)
-![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/FreeCAD_icons.gif)
+# OpenDarkThemePreferencePack
+![Colours](resources/icons/OpenDark.png)
+
+OpenDark Theme Preference Pack for [FreeCAD](https://www.freecadweb.org)
+
+This is an color-impaired accessible aesthetically pleasing theme for FreeCAD based on the [Open-Color Palette] (https://github.com/yeun/open-color)
+
 
 ## Installation
-See https://github.com/MisterMakerNL/ExtremeProDark/blob/main/INSTALL.md
 
-</details>
+Using [Preference Packs](https://wiki.freecadweb.org/Preference_Packs) requires FreeCAD 0.20 or higher.
 
-## Discussion
-
-Feel free to discuss this theme and addon on https://forum.freecadweb.org/viewtopic.php?f=34&t=68973
+Preference Packs should be installed via the [Addon Manager](https://github.com/FreeCAD/FreeCAD-addons), but can be [installed manually](https://wiki.freecadweb.org/Preference_Packs#Distributing_a_pack) if required.
 
 ## Screenshots
 
-Right Click/View Image too see in 4K
-![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/screenshot1.png)
-![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/screenshot2.png)
-![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/screenshot3.png)
-![afbeelding](https://github.com/MisterMakerNL/ExtremeProDark/blob/main/screenshot4.png)
-## License
-Share-a-like offcourse!
+![Screenshots](resources/images/OpenDark_sketcher.png)
+![Screenshots](resources/images/OpenDark_prefs.png)
