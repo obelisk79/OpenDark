@@ -1,9 +1,12 @@
 # OpenDark
 ![Colours](resources/icons/OpenDark.png)
 
+# BETA BETA BETA
+# PLEASE REPORT ANY ISSUES DISCOVERED ON GITHUB
+
 OpenDark Theme Preference Pack for [FreeCAD](https://www.freecadweb.org)
 
-This is an color-impaired accessible aesthetically pleasing theme for FreeCAD based on the [Open-Color Palette](https://github.com/yeun/open-color)
+This is an color-impaired accessible aesthetically pleasing theme for FreeCAD based on the [Open-Color Palette](https://github.com/yeun/open-color) that is WCAG/APCA compliant.
 
 
 ## Installation
