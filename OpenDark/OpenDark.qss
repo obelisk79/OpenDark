@@ -5,7 +5,7 @@
   border-radius: 2px;
   border-image: none;
   outline: 0;
-  color: #f8f9fa;
+  color: #dee2e6;
   background-color: #212529; }
 
 QCheckBox {
@@ -16,7 +16,7 @@ QCheckBox {
     color: #495057; }
   QCheckBox::indicator {
     top: 1px;
-    color: #f8f9fa;
+    color: #dee2e6;
     background-color: #1a1e22;
     padding: 1px;
     width: 12px;
@@ -150,8 +150,7 @@ QGroupBox {
   margin: 10px;
   padding-top: 10px;
   margin-left: -20px;
-  margin-right: -20px;
-  padding-left: -20px; }
+  margin-right: -20px; }
   QGroupBox::title {
     top: -10px;
     margin-left: 16px;
@@ -182,7 +181,7 @@ QLineEdit {
   border: 1px solid #292f35;
   border-radius: 2px;
   margin: 0px;
-  padding: 0px;
+  padding: 2px;
   padding-left: 6px;
   padding-right: 6px; }
   QLineEdit:disabled {
@@ -208,18 +207,18 @@ QMenu {
   border-radius: 2px;
   border-radius: 0px; }
   QMenu::item {
-    color: #e9ecef;
+    color: #adb5bd;
     margin: 0px;
     padding: 2px;
     padding-left: 10px; }
   QMenu::item:disabled {
     color: #495057; }
   QMenu::item:selected {
-    color: #f8f9fa;
+    color: #dee2e6;
     border: 1px solid #264b69;
     background-color: #1f364d; }
   QMenu::item:pressed {
-    color: #f8f9fa;
+    color: #dee2e6;
     border: 1px solid #264b69;
     background-color: #1f364d; }
   QMenu::icon {
@@ -230,7 +229,7 @@ QMenu {
     right: 8px; }
 
 QMenuBar {
-  color: #e9ecef;
+  color: #adb5bd;
   background-color: #1a1e22;
   border-bottom: 1px solid #292f35; }
   QMenuBar::item {
@@ -240,12 +239,12 @@ QMenuBar {
     padding-left: 2px;
     padding-right: 2px; }
   QMenuBar::item:pressed {
-    color: #f8f9fa;
+    color: #dee2e6;
     background-color: #1f364d;
     border: 1px solid #264b69;
     border-radius: 2px; }
   QMenuBar::item:selected {
-    color: #f8f9fa;
+    color: #dee2e6;
     background-color: #1f364d;
     border: 1px solid #264b69;
     border-radius: 2px; }
@@ -282,6 +281,9 @@ QSizeGrip {
   width: 12px;
   heigh: 12px;
   image: url(qss:images_dark-light/sizegrip_light.svg); }
+
+QSpinBox {
+  padding: 2px; }
 
 QTabBar {
   margin-bottom: 4px; }
@@ -342,8 +344,8 @@ QToolBar > QToolButton#qt_toolbutton_menubutton {
   /* Hack to add more width to buttons with menu */ }
 
 QAbstractSpinBox {
-  padding-top: 0px;
-  padding-bottom: 0px; }
+  padding-top: 1px;
+  padding-bottom: 1px; }
 
 /*==================================================================================================
 Tasks panel (custom FreeCAD class)
@@ -389,4 +391,5 @@ QSint--ActionGroup QFrame[class="header"] QLabel[fold="true"] {
   margin: 0px; }
 
 QSint--ActionGroup QFrame[class="content"] QGroupBox > QCheckBox {
-  subcontrol-position: left; }
+  subcontrol-origin: border;
+  subcontrol-position: center left; }
