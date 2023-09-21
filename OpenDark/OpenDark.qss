@@ -8,6 +8,75 @@
   color: #dee2e6;
   background-color: #212529; }
 
+QAbstractSpinBox {
+  max-height: 20px;
+  margin: 0px;
+  padding: 2px;
+  background-color: #1a1e22;
+  border: 1px solid #292f35;
+  border-radius: 2px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  padding-left: 6px;
+  text-align: left; }
+  QAbstractSpinBox:hover {
+    border-color: #264b69; }
+  QAbstractSpinBox:disabled {
+    color: #495057;
+    border-color: #292f35; }
+  QAbstractSpinBox::up-button {
+    width: 12px;
+    subcontrol-origin: border;
+    subcontrol-position: top right;
+    top: 1px;
+    right: 1px;
+    background-color: #495057;
+    border: 1px solid #495057;
+    border-radius: 0px;
+    border-top-right-radius: 2px; }
+    QAbstractSpinBox::up-button:hover {
+      background-color: #292f35;
+      border: 1px solid #292f35; }
+    QAbstractSpinBox::up-button:pressed {
+      background-color: #1f364d;
+      border: 1px solid #1f364d; }
+    QAbstractSpinBox::up-button:disabled {
+      background-color: #292f35;
+      border: 1px solid #292f35; }
+  QAbstractSpinBox::down-button {
+    width: 12px;
+    subcontrol-origin: border;
+    subcontrol-position: bottom right;
+    bottom: 1px;
+    right: 1px;
+    background-color: #495057;
+    border: 1px solid #495057;
+    border-radius: 0px;
+    border-bottom-right-radius: 2px; }
+    QAbstractSpinBox::down-button:hover {
+      background-color: #292f35;
+      border: 1px solid #292f35; }
+    QAbstractSpinBox::down-button:pressed {
+      background-color: #1f364d;
+      border: 1px solid #1f364d; }
+    QAbstractSpinBox::down-button:disabled {
+      background-color: #292f35;
+      border: 1px solid #292f35; }
+  QAbstractSpinBox::up-arrow {
+    top: 1px;
+    image: url(qss:images_dark-light/light_up_arrow.svg); }
+    QAbstractSpinBox::up-arrow:disabled {
+      image: url(qss:images_dark-light/light_up_arrow_disabled.svg); }
+  QAbstractSpinBox::down-arrow {
+    top: 1px;
+    image: url(qss:images_dark-light/light_down_arrow.svg); }
+    QAbstractSpinBox::down-arrow:disabled {
+      image: url(qss:images_dark-light/light_down_arrow_disabled.svg); }
+
+QAbstractSpinBox > QLineEdit {
+  padding: 0px;
+  margin: 0px; }
+
 QCheckBox {
   background: transparent;
   margin: 0px;
@@ -67,7 +136,9 @@ QDockWidget {
   margin: 0px;
   padding: 0px;
   border: 1px solid #495057;
-  border-radius: 2px; }
+  border-radius: 2px;
+  titlebar-close-icon: url(qss:images_dark-light/close_light.svg);
+  titlebar-normal-icon: url(qss:images_dark-light/undock_light.svg); }
   QDockWidget::title {
     text-align: center; }
 
@@ -80,69 +151,6 @@ QDialog {
 
 QDialogButtonBox {
   dialogbuttonbox-buttons-have-icons: 0; }
-
-QDoubleSpinBox, QAbstractSpinBox, QSpinBox {
-  margin: 0px;
-  padding: 2px;
-  background-color: #1a1e22;
-  border: 1px solid #292f35;
-  border-radius: 2px;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-  padding-left: 6px; }
-  QDoubleSpinBox:hover, QAbstractSpinBox:hover, QSpinBox:hover {
-    border-color: #264b69; }
-  QDoubleSpinBox:disabled, QAbstractSpinBox:disabled, QSpinBox:disabled {
-    color: #495057;
-    border-color: #292f35; }
-  QDoubleSpinBox::up-button, QAbstractSpinBox::up-button, QSpinBox::up-button {
-    width: 12px;
-    subcontrol-origin: border;
-    subcontrol-position: top right;
-    top: 1px;
-    right: 1px;
-    background-color: #495057;
-    border: 1px solid #495057;
-    border-radius: 0px;
-    border-top-right-radius: 2px; }
-    QDoubleSpinBox::up-button:hover, QAbstractSpinBox::up-button:hover, QSpinBox::up-button:hover {
-      background-color: #292f35;
-      border: 1px solid #292f35; }
-    QDoubleSpinBox::up-button:pressed, QAbstractSpinBox::up-button:pressed, QSpinBox::up-button:pressed {
-      background-color: #1f364d;
-      border: 1px solid #1f364d; }
-    QDoubleSpinBox::up-button:disabled, QAbstractSpinBox::up-button:disabled, QSpinBox::up-button:disabled {
-      background-color: #292f35;
-      border: 1px solid #292f35; }
-  QDoubleSpinBox::down-button, QAbstractSpinBox::down-button, QSpinBox::down-button {
-    width: 12px;
-    subcontrol-origin: border;
-    subcontrol-position: bottom right;
-    bottom: 1px;
-    right: 1px;
-    background-color: #495057;
-    border: 1px solid #495057;
-    border-radius: 0px;
-    border-bottom-right-radius: 2px; }
-    QDoubleSpinBox::down-button:hover, QAbstractSpinBox::down-button:hover, QSpinBox::down-button:hover {
-      background-color: #292f35;
-      border: 1px solid #292f35; }
-    QDoubleSpinBox::down-button:pressed, QAbstractSpinBox::down-button:pressed, QSpinBox::down-button:pressed {
-      background-color: #1f364d;
-      border: 1px solid #1f364d; }
-    QDoubleSpinBox::down-button:disabled, QAbstractSpinBox::down-button:disabled, QSpinBox::down-button:disabled {
-      background-color: #292f35;
-      border: 1px solid #292f35; }
-  QDoubleSpinBox::up-arrow, QAbstractSpinBox::up-arrow, QSpinBox::up-arrow {
-    top: 1px;
-    image: url(qss:images_dark-light/light_up_arrow.svg); }
-    QDoubleSpinBox::up-arrow:disabled, QAbstractSpinBox::up-arrow:disabled, QSpinBox::up-arrow:disabled {
-      image: url(qss:images_dark-light/light_up_arrow_disabled.svg); }
-  QDoubleSpinBox::down-arrow, QAbstractSpinBox::down-arrow, QSpinBox::down-arrow {
-    top: 1px;
-    image: url(qss:images_dark-light/light_down_arrow.svg); }
-    QDoubleSpinBox::down-arrow:disabled, QAbstractSpinBox::down-arrow:disabled, QSpinBox::down-arrow:disabled {
-      image: url(qss:images_dark-light/light_down_arrow_disabled.svg); }
 
 QGroupBox {
   font-weight: bold;
@@ -282,9 +290,6 @@ QSizeGrip {
   heigh: 12px;
   image: url(qss:images_dark-light/sizegrip_light.svg); }
 
-QSpinBox {
-  padding: 2px; }
-
 QTabBar {
   margin-bottom: 4px; }
   QTabBar::tab {
@@ -342,10 +347,6 @@ QDialog#Gui__Dialog__DlgPreferences QGroupBox {
 QToolBar > QToolButton#qt_toolbutton_menubutton {
   padding-right: 12px;
   /* Hack to add more width to buttons with menu */ }
-
-QAbstractSpinBox {
-  padding-top: 1px;
-  padding-bottom: 1px; }
 
 /*==================================================================================================
 Tasks panel (custom FreeCAD class)
