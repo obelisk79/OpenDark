@@ -178,6 +178,7 @@ QHeaderView::section {
   padding-left: 12px; }
 
 QLabel {
+  background-color: transparent;
   text-align: right;
   margin: 0px;
   padding: 0px; }
@@ -201,7 +202,8 @@ QLineEdit {
 
 QListView {
   padding: 8px;
-  background-color: #1a1e22; }
+  background-color: #1a1e22;
+  alternate-background-color: #1a1e22; }
 
 QMainWindow {
   margin: 0px;
@@ -291,23 +293,35 @@ QSizeGrip {
   image: url(qss:images_dark-light/sizegrip_light.svg); }
 
 QTabBar {
-  margin-bottom: 4px; }
+  margin: 4px; }
   QTabBar::tab {
     padding-left: 6px;
     padding-right: 6px;
-    padding-bottom: 4px;
+    padding: 4px;
     min-width: 2em;
     background-color: transparent;
     border: 3px solid transparent; }
-  QTabBar::tab:selected {
+  QTabBar::tab:top:selected {
     border: 3px solid transparent;
     border-bottom: 3px solid #339af0; }
-  QTabBar::tab:!selected:hover {
+  QTabBar::tab:top:!selected:hover {
     border-bottom: 3px solid #495057; }
+  QTabBar::tab:bottom:selected {
+    border: 3px solid transparent;
+    border-top: 3px solid #339af0; }
+  QTabBar::tab:bottom:!selected:hover {
+    border-top: 3px solid #495057; }
+  QTabBar::close-button {
+    subcontrol-origin: margin;
+    subcontrol-position: center right;
+    background-image: url(qss:images_dark-light/close_light.svg);
+    background-position: center center;
+    background-repeat: none; }
 
-QTableView {
-  background: #1a1e22;
-  border: 1px solid #292f35;
+QTreeView {
+  background-color: #212529;
+  alternate-background-color: #212529;
+  border: 1px solid transparent;
   border-radius: 2px;
   selection-background-color: #1f364d; }
 
@@ -345,8 +359,8 @@ QDialog#Gui__Dialog__DlgPreferences QGroupBox {
   border-bottom: 0px; }
 
 QToolBar > QToolButton#qt_toolbutton_menubutton {
-  padding-right: 12px;
-  /* Hack to add more width to buttons with menu */ }
+  padding-right: 16px;
+  /* add more width to buttons with menu */ }
 
 /*==================================================================================================
 Tasks panel (custom FreeCAD class)
@@ -368,7 +382,7 @@ QSint--ActionGroup QFrame[class="header"]:hover {
   border-bottom: 3px solid #264b69; }
 
 QSint--ActionGroup QToolButton[class="header"] {
-  color: #f8f9fa;
+  color: #dee2e6;
   /* Task Panel Header text color */
   text-align: left;
   font-weight: bold;
@@ -394,3 +408,6 @@ QSint--ActionGroup QFrame[class="header"] QLabel[fold="true"] {
 QSint--ActionGroup QFrame[class="content"] QGroupBox > QCheckBox {
   subcontrol-origin: border;
   subcontrol-position: center left; }
+
+Gui--PropertyEditor--PropertyEditor {
+  gridline-color: #495057; }
