@@ -80,7 +80,8 @@ QAbstractSpinBox > QLineEdit {
 QCheckBox {
   background: transparent;
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  margin: 2px; }
   QCheckBox:disabled {
     color: #495057; }
   QCheckBox::indicator {
@@ -225,9 +226,9 @@ QMenu {
   border-radius: 0px; }
   QMenu::item {
     color: #adb5bd;
-    margin: 0px;
-    padding: 2px;
-    padding-left: 10px; }
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 28px; }
   QMenu::item:disabled {
     color: #495057; }
   QMenu::item:selected {
@@ -239,7 +240,7 @@ QMenu {
     border: 1px solid #264b69;
     background-color: #1f364d; }
   QMenu::icon {
-    left: 7px; }
+    left: 6px; }
   QMenu::indicator {
     left: 6px; }
   QMenu::right-arrow {
@@ -293,6 +294,52 @@ QRadioButton {
   QRadioButton::indicator:checked {
     image: url(qss:images_dark-light/radiobutton_light.svg); }
 
+QScrollBar {
+  background-color: #1a1e22;
+  margin: 0px; }
+  QScrollBar::handle {
+    background-color: #1f364d;
+    border: 1px solid #264b69;
+    border-radius: 3px; }
+    QScrollBar::handle:hover {
+      background-color: #264b69; }
+    QScrollBar::handle:vertical {
+      margin: 16px 3px; }
+    QScrollBar::handle:horizontal {
+      margin: 3px 16px; }
+  QScrollBar::sub-line:vertical {
+    margin: 3px 0px 3px 1px;
+    /* 1px to correctly fit the 10px width image */
+    border-image: url(qss:images_dark-light/light_up_arrow.svg);
+    height: 6px;
+    width: 10px;
+    subcontrol-position: top;
+    subcontrol-origin: margin; }
+  QScrollBar::sub-line:horizontal:horizontal {
+    margin: 0px 3px 0px 3px;
+    /* 1px to correctly fit the 10px width image */
+    border-image: url(qss:images_dark-light/light_left_arrow.svg);
+    width: 10px;
+    height: 7px;
+    subcontrol-position: left;
+    subcontrol-origin: margin; }
+  QScrollBar::add-line:vertical {
+    margin: 3px 0px 3px 1px;
+    /* 1px to correctly fit the 10px width image */
+    border-image: url(qss:images_dark-light/light_down_arrow.svg);
+    height: 6px;
+    width: 10px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin; }
+  QScrollBar::add-line:horizontal {
+    margin: 0px 3px 0px 3px;
+    /* 1px to correctly fit the 10px width image */
+    border-image: url(qss:images_dark-light/light_right_arrow.svg);
+    width: 10px;
+    height: 7px;
+    subcontrol-position: right;
+    subcontrol-origin: margin; }
+
 QSizeGrip {
   background: transparent;
   width: 12px;
@@ -302,8 +349,8 @@ QSizeGrip {
 QTabBar {
   margin: 4px; }
   QTabBar::tab {
-    margin-left: 2px;
-    margin-right: 2px;
+    font-weight: 500;
+    margin: 0px 4px 0px 4px;
     padding-left: 6px;
     padding-right: 6px;
     padding: 4px;
