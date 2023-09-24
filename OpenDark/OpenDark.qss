@@ -304,11 +304,16 @@ QTabBar {
   QTabBar::tab {
     padding-left: 6px;
     padding-right: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
     padding: 4px;
     min-width: 2em;
     background-color: transparent;
-    border: 3px solid transparent;
-    border-right: 1px dotted #495057; }
+    border: 3px solid transparent; }
+  QTabBar::tab:bottom {
+    border-top: 2px dotted #495057; }
+  QTabBar::tab:top {
+    border-bottom: 2px dotted #495057; }
   QTabBar::tab:top:selected {
     border-bottom: 3px solid #339af0; }
   QTabBar::tab:top:!selected:hover {
