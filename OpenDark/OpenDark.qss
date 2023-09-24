@@ -300,11 +300,12 @@ QScrollBar {
   background-color: #1a1e22;
   margin: 0px; }
   QScrollBar::handle {
-    background-color: #1f364d;
-    border: 1px solid #264b69;
+    background-color: #495057;
+    border: 1px solid transparent;
     border-radius: 3px; }
     QScrollBar::handle:hover {
-      background-color: #264b69; }
+      background-color: #1f364d;
+      border: 1px solid #264b69; }
     QScrollBar::handle:vertical {
       margin: 16px 3px; }
     QScrollBar::handle:horizontal {
@@ -352,7 +353,7 @@ QTabBar {
   margin: 4px; }
   QTabBar::tab {
     font-weight: 500;
-    margin: 0px 4px 0px 4px;
+    margin: 4px;
     padding-left: 6px;
     padding-right: 6px;
     padding: 4px;
