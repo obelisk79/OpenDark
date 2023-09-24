@@ -228,7 +228,9 @@ QMenu {
     color: #adb5bd;
     padding: 6px;
     padding-left: 10px;
-    padding-right: 28px; }
+    padding-right: 28px;
+    border: 1px solid transparent;
+    border-radius: 2px; }
   QMenu::item:disabled {
     color: #495057; }
   QMenu::item:selected {
