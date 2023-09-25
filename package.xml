@@ -6,7 +6,7 @@
  <description>An accessible and coordinated Dark theme for FreeCAD</description>
  <maintainer email="nomail@freecad.org">Obelisk79</maintainer>
  <license file="LICENSE">GPLv3</license>
- <url type="repository" branch="main">https://github.com/Obelisk79/OpenDark</url>
+ <url type="repository" branch="main">https://github.com/obelisk79/OpenDark</url>
  <icon>resources/icons/OpenDark.svg</icon>
 
 <content>
