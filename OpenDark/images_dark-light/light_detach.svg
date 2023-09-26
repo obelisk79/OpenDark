@@ -24,9 +24,9 @@
      inkscape:deskcolor="#505050"
      inkscape:document-units="px"
      showgrid="true"
-     inkscape:zoom="46.725552"
-     inkscape:cx="7.1588239"
-     inkscape:cy="7.9292803"
+     inkscape:zoom="22.627417"
+     inkscape:cx="7.8444658"
+     inkscape:cy="4.8834562"
      inkscape:window-width="2560"
      inkscape:window-height="1363"
      inkscape:window-x="0"
@@ -57,19 +57,16 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="fill:#adb5bd;fill-rule:evenodd;stroke:#adb5bd;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke;stroke-opacity:1;fill-opacity:1"
-       d="M 14.486363,1.5 H 10.04977 L 14.486365,6 Z"
-       id="path1"
-       sodipodi:nodetypes="cccc" />
+       style="fill:none;fill-rule:evenodd;stroke:#868e96;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
+       d="M 0.94166892,6.441942 1,13.44194 h 10"
+       id="path1" />
     <path
-       style="fill:#f1f3f5;fill-rule:evenodd;stroke:#adb5bd;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke;stroke-opacity:1"
-       d="M 14,2 8,8"
-       id="path2"
-       sodipodi:nodetypes="cc" />
+       style="fill:none;fill-rule:evenodd;stroke:#868e96;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
+       d="M 4,2.441942 V 10.44194 H 15 V 2.441942"
+       id="path2" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#adb5bd;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke;stroke-opacity:1"
-       d="M 6,2 H 4 C 2.3953425,2.3391592 1.3311893,3.2690451 1,5 v 7 c 0.3669665,1.440283 1.0722414,2.645268 3,3 h 8 c 1.455808,-0.376383 2.649585,-1.101041 3,-2.946638 V 10"
-       id="path3"
-       sodipodi:nodetypes="cccccccc" />
+       style="fill:none;fill-rule:evenodd;stroke:#868e96;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:markers fill stroke"
+       d="M 4.2274168,2.701947 H 14.772583"
+       id="path3" />
   </g>
 </svg>
