@@ -476,9 +476,6 @@ QSint--ActionGroup QFrame[class="content"] QGroupBox > QCheckBox {
   subcontrol-origin: border;
   subcontrol-position: center left; }
 
-QSint--ActionLabel[class='action'] {
-  qproperty-iconSize: 0px; }
-
 Gui--PropertyEditor--PropertyEditor {
   gridline-color: #495057;
   qproperty-groupBackground: #495057; }
