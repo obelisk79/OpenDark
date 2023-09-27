@@ -19,3 +19,6 @@ Preference Packs should be installed via the [Addon Manager](https://github.com/
 
 ![Screenshots](resources/images/OpenDark_sketcher.png)
 ![Screenshots](resources/images/OpenDark_prefs.a.png)
+
+## License
+## [LGPLv2](https://en.m.wikipedia.org/wiki/GNU_Lesser_General_Public_License)
