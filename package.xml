@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <package format="1" xmlns="https://wiki.freecad.org/Package_Metadata">
  <name>OpenDark</name>
- <version>2023.09.27</version>
+ <version>2023.09.27a</version>
  <date>2023.09.27</date>
  <description>An accessible and coordinated Dark theme for FreeCAD</description>
  <maintainer email="nomail@freecad.org">Obelisk79</maintainer>
