@@ -358,7 +358,6 @@ QSizeGrip {
 QTabBar {
   margin: 4px; }
   QTabBar::tab {
-    //font-weight: 500;
     margin: 4px;
     padding-left: 6px;
     padding-right: 6px;
@@ -398,7 +397,7 @@ QToolBar {
   border-bottom: 1px solid #292f35; }
 
 QToolButton {
-  margin: 3px; }
+  margin: 3px 4px 3px 4px; }
   QToolButton:hover {
     border: 1px solid #264b69; }
   QToolButton:focus {
