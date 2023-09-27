@@ -5,7 +5,7 @@
  <date>2023.09.27</date>
  <description>An accessible and coordinated Dark theme for FreeCAD</description>
  <maintainer email="nomail@freecad.org">Obelisk79</maintainer>
- <license file="LICENSE">GPLv3</license>
+ <license file="LICENSE">LGPLv2</license>
  <url type="repository" branch="main">https://github.com/obelisk79/OpenDark</url>
  <icon>resources/icons/OpenDark.svg</icon>
 
