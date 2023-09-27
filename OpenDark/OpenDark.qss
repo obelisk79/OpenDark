@@ -358,7 +358,7 @@ QSizeGrip {
 QTabBar {
   margin: 4px; }
   QTabBar::tab {
-    font-weight: 500;
+    //font-weight: 500;
     margin: 4px;
     padding-left: 6px;
     padding-right: 6px;
