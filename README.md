@@ -1,7 +1,6 @@
 # OpenDark
 ![Colours](resources/icons/OpenDark.png)
 
-# BETA BETA BETA
 # PLEASE REPORT ANY ISSUES DISCOVERED ON GITHUB
 
 OpenDark Theme Preference Pack for [FreeCAD](https://www.freecad.org)
