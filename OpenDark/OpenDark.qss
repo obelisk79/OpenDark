@@ -185,6 +185,8 @@ QLabel {
   padding: 0px; }
   QLabel::label {
     subcontrol-origin: center right; }
+  QLabel[haslink="true"] {
+    color: #339af0; }
 
 QLineEdit {
   background-color: #1a1e22;
@@ -244,7 +246,13 @@ QMenu {
   QMenu::icon {
     left: 6px; }
   QMenu::indicator {
-    left: 6px; }
+    width: 12px;
+    height: 12px;
+    left: 6px;
+    border: 1px solid #495057;
+    border-radius: 2px; }
+    QMenu::indicator:checked {
+      image: url(qss:images_dark-light/checkbox_light.svg); }
   QMenu::right-arrow {
     right: 8px; }
   QMenu::separator {
@@ -380,7 +388,7 @@ QTabBar {
     background-position: center center;
     background-repeat: none; }
 
-QTableWidget {
+QTableWidget, QTableView {
   background-color: #1a1e22;
   alternate-background-color: #1a1e22;
   gridline-color: #495057; }
@@ -398,11 +406,20 @@ QTextEdit {
   border-radius: 2px; }
 
 QToolBar {
+  background-color: transparent;
+  margin-top: 8px;
   padding: 1px;
   border-bottom: 1px solid #292f35; }
 
+QToolBarExtension {
+  border: 1px solid transparent;
+  min-width: 16px;
+  background-color: transparent;
+  qproperty-icon: url(qss:images_dark-light/light_expand.svg); }
+
 QToolButton {
-  margin: 3px 4px 3px 4px; }
+  margin: 0px 4px 0px 4px;
+  padding: 0px; }
   QToolButton:hover {
     border: 1px solid #264b69; }
   QToolButton:focus {
@@ -422,6 +439,9 @@ QToolTip {
   border: 1px solid #264b69;
   background-color: #1f364d; }
 
+QDialog QTreeWidget {
+  background-color: #1a1e22; }
+
 QDialog#Gui__Dialog__DlgPreferences QGroupBox {
   border-bottom: 0px; }
 
@@ -430,7 +450,7 @@ QDialog#Gui__Dialog__DlgPreferences QListView {
   min-width: 120px; }
 
 QWidget#wbList * {
-  background-color: #1a1e22; }
+  background-color: transparent; }
 
 QToolBar > QToolButton#qt_toolbutton_menubutton {
   padding-right: 16px;
@@ -486,3 +506,10 @@ QSint--ActionGroup QFrame[class="content"] QGroupBox > QCheckBox {
 Gui--PropertyEditor--PropertyEditor {
   gridline-color: #495057;
   qproperty-groupBackground: #495057; }
+
+/* Cells with values that can only be changed with "..." button (Attachment)
+/* These seem to draw on top of the underlying label, so must be completely hidden or have an opaque background */
+Gui--PropertyEditor--PropertyEditor > QWidget > QWidget > QLabel {
+  background-color: #212529;
+  margin-left: 1px;
+  max-height: 20px; }
