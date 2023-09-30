@@ -26,12 +26,12 @@ QAbstractSpinBox {
         top: 1px;
         right: 1px;
         background-color: $control-bg;
-        border: 1px solid $hardborder;
+        border: 1px solid $softborder;
         border-radius: 0px;
         border-top-right-radius: 2px;
         &:hover {
-            background-color: $softborder;
-            border: 1px solid $softborder;
+            background-color: $hardborder;
+            border: 1px solid $hardborder;
         }
         &:pressed {
             background-color: $accent-bg;
@@ -49,12 +49,12 @@ QAbstractSpinBox {
         bottom: 1px;
         right: 1px;
         background-color: $control-bg;
-        border: 1px solid $hardborder;
+        border: 1px solid $softborder;
         border-radius: 0px;
         border-bottom-right-radius: 2px;
         &:hover {
-            background-color: $softborder;
-            border: 1px solid $softborder;
+            background-color: $hardborder;
+            border: 1px solid $hardborder;
         }
         &:pressed {
             background-color: $accent-bg;
@@ -132,15 +132,15 @@ QComboBox {
     &::drop-down {
         subcontrol-origin: border;
         subcontrol-position: top right;
-        background-color: $hardborder;
+        background-color: $softborder;
         border: 2px solid transparent;
         border-top-right-radius: 2px;
         border-bottom-right-radius: 2px;
         &:disabled {
-            background-color: $softborder;
+            background-color: transparent;
         }
         &:hover {
-            background-color: $softborder;
+            background-color: $hardborder;
         }
         &:pressed {
             background-color: $accent-bg;
@@ -178,7 +178,7 @@ QDialog {
 // non-interactive element
 QGroupBox {
     font-weight: bold;
-    border: 3px solid $hardborder;
+    border: 3px solid $softborder;
     margin: 10px;
     padding-top: 10px;
     margin-left: -20px;
@@ -212,9 +212,6 @@ QLabel {
     @include space0px;
     &::label {
         subcontrol-origin: center right;
-    }
-    &[haslink="true"] {
-        color: $selectedtab;
     }
 }
 
@@ -290,14 +287,7 @@ QMenu {
     }
 
     &::indicator {
-        width: 12px;
-        height: 12px;
         left: 6px;
-        border: 1px solid $hardborder;
-        border-radius: 2px;
-        &:checked {
-            image:url(qss:images_dark-light/checkbox_light.svg);
-        }
     }
 
     &::right-arrow {
@@ -443,14 +433,14 @@ QTabBar {
         padding-left: 12px;
         padding-right: 12px;
         min-width: 2em;
-        background-color: $hardborder;
+        background-color: $softborder;
         border: 0px solid transparent;
         border-radius: 4px;
         &:hover {
             background-color: $accent-bg;
         }
         &:selected {
-            background-color: $accent-border;
+            background-color: $accent-bg;
         }
     }
     &::close-button {
@@ -469,12 +459,6 @@ QTableWidget {
     gridline-color: $hardborder;
 }
 
-QTableView {
-    @extend QTableWidget;
-}
-
-
-
 QTreeView {
     background-color: $main-bg;
     alternate-background-color: $main-bg;
@@ -488,22 +472,12 @@ QTextEdit {
 }
 
 QToolBar {
-    background-color: transparent;
-    margin-top: 8px;
     padding: 1px;
     border-bottom: 1px solid $softborder;
 }
 
-QToolBarExtension {
-    border: 1px solid transparent;
-    min-width: 16px;
-    background-color: transparent;
-    qproperty-icon: url(qss:images_dark-light/light_expand.svg);
-}
-
 QToolButton {
-    margin: 0px 4px 0px 4px;
-    padding: 0px;
+    margin: 3px 4px 3px 4px;
     &:hover {
         border: 1px solid $accent-border;
     }
@@ -529,10 +503,6 @@ QToolTip {
 }
 
 // Specialty styling
-QDialog QTreeWidget {
-    background-color: $contrast-bg;
-}
-
 QDialog#Gui__Dialog__DlgPreferences QGroupBox {
     border-bottom: 0px;
 }
@@ -616,22 +586,3 @@ Gui--PropertyEditor--PropertyEditor {
     gridline-color: $hardborder;  
     qproperty-groupBackground: $control-bg;
 }
-
-/* Cells with values that can only be changed with "..." button (Attachment)
-/* These seem to draw on top of the underlying label, so must be completely hidden or have an opaque background */
-Gui--PropertyEditor--PropertyEditor > QWidget > QWidget > QLabel {
-	background-color: $main-bg;
-	margin-left: 1px;
-    max-height: 20px;
-}
-
-// QToolBar QToolButton#qt_toolbar_ext_button {
-//     padding: 0px;
-//     qproperty-icon: url(qss:images_dark-light/light_right_arrow.svg);
-//     image: transparent;
-//     background-repeat: none;
-//     background-position: bottom center;
-//     min-width: 10px;
-
-// }
-
