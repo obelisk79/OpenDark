@@ -406,7 +406,7 @@ QTextEdit {
   border-radius: 2px; }
 
 QToolBar {
-  background-color: transparent;
+  background-color: #212529;
   margin-top: 8px;
   padding: 1px;
   border-bottom: 1px solid #292f35; }
