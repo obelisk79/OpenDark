@@ -360,7 +360,7 @@ QScrollBar {
 QSizeGrip {
   background: transparent;
   width: 12px;
-  heigh: 12px;
+  height: 12px;
   image: url(qss:images_dark-light/light_sizegrip.svg); }
 
 QTabBar {
