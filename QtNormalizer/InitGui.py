@@ -22,6 +22,7 @@
 
 class QtNormalizer:
     from PySide import QtWidgets
+    from FreeCAD import Console
     QtWidgets.QApplication.setStyle('Fusion')
-    print("FreeCAD Dark Success!")
+    Console.PrintLog("FreeCAD Dark Success!\n")
 
