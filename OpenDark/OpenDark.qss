@@ -393,6 +393,9 @@ QTableWidget, QTableView {
   alternate-background-color: #1a1e22;
   gridline-color: #495057; }
 
+QTableView::item {
+  color: #dee2e6; }
+
 QTreeView {
   background-color: #212529;
   alternate-background-color: #212529;
