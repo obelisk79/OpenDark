@@ -24,5 +24,5 @@ class QtNormalizer:
     from PySide import QtWidgets
     from FreeCAD import Console
     QtWidgets.QApplication.setStyle('Fusion')
-    Console.PrintLog("Widget Style set to 'Fusion' - [OpenDark]\n")
+    # // Only needed for debugging // Console.PrintLog("Widget Style set to 'Fusion' - [OpenDark]\n")
 
