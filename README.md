@@ -17,6 +17,7 @@ Preference Packs should be installed via the [Addon Manager](https://github.com/
 ## Screenshots
 
 ![Screenshots](resources/images/OpenDark_sketcher.png)
+![Screenshots](resources/images/text_panels.png)
 ![Screenshots](resources/images/OpenDark_prefs.a.png)
 
 ## License
