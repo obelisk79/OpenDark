@@ -397,6 +397,7 @@ QTableView::item {
   color: #dee2e6; }
 
 QTreeView {
+  color: #dee2e6;
   background-color: #212529;
   alternate-background-color: #212529;
   border: 1px solid transparent;
@@ -422,19 +423,23 @@ QToolBarExtension {
 
 QToolButton {
   margin: 0px 4px 0px 4px;
-  padding: 0px; }
+  padding: 1px 0px 1px 0px;
+  border: 1px solid transparent;
+  border-radius: 2px; }
   QToolButton:hover {
+    margin: 0px 4px 0px 4px;
     border: 1px solid #264b69; }
   QToolButton:focus {
+    margin: 0px 4px 0px 4px;
     border: 1px solid #264b69; }
   QToolButton:pressed {
+    margin: 0px 4px 0px 4px;
     border: 1px solid #264b69;
     background-color: #1f364d; }
   QToolButton::menu-button {
-    border: 1px solid transparent;
-    border-radius: 2px;
+    border: 0px solid transparent;
     padding-right: 2px;
-    padding-top: -15%;
+    padding-top: 2px;
     width: 12px; }
 
 QToolTip {
