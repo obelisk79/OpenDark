@@ -404,6 +404,30 @@ QTreeView {
   border-radius: 2px;
   selection-background-color: #1f364d; }
 
+QTreeView::branch {
+  background: transparent; }
+
+QTreeView::branch:has-siblings:!adjoins-item {
+  border-image: url(qss:images_dark-light/branch_vline_OpenDark.svg) 0; }
+
+QTreeView::branch:has-siblings:adjoins-item {
+  border-image: url(qss:images_dark-light/branch_more_OpenDark.svg) 0; }
+
+QTreeView::branch:!has-children:!has-siblings:adjoins-item {
+  border-image: url(qss:images_dark-light/branch_end_OpenDark.svg) 0; }
+
+QTreeView::branch:closed:has-children:has-siblings {
+  border-image: url(qss:images_dark-light/branch_more_closed_OpenDark.svg) 0; }
+
+QTreeView::branch:has-children:!has-siblings:closed {
+  border-image: url(qss:images_dark-light/branch_end_closed_OpenDark.svg) 0; }
+
+QTreeView::branch:open:has-children:has-siblings {
+  border-image: url(qss:images_dark-light/branch_more_open_OpenDark.svg) 0; }
+
+QTreeView::branch:open:has-children:!has-siblings {
+  border-image: url(qss:images_dark-light/branch_end_open_OpenDark.svg) 0; }
+
 QTextEdit {
   background-color: #1a1e22;
   border: 1px solid #292f35;
@@ -411,7 +435,7 @@ QTextEdit {
 
 QToolBar {
   background-color: #212529;
-  margin-top: 8px;
+  margin-top: 6px;
   padding: 1px;
   border-bottom: 1px solid #292f35; }
 
@@ -422,18 +446,18 @@ QToolBarExtension {
   qproperty-icon: url(qss:images_dark-light/light_expand.svg); }
 
 QToolButton {
-  margin: 0px 4px 0px 4px;
-  padding: 1px 0px 1px 0px;
+  margin: 0px 3px 0px 3px;
+  padding: 0px 0px 0px 0px;
   border: 1px solid transparent;
   border-radius: 2px; }
   QToolButton:hover {
-    margin: 0px 4px 0px 4px;
+    margin: 0px 3px 0px 3px;
     border: 1px solid #264b69; }
   QToolButton:focus {
-    margin: 0px 4px 0px 4px;
+    margin: 0px 3px 0px 3px;
     border: 1px solid #264b69; }
   QToolButton:pressed {
-    margin: 0px 4px 0px 4px;
+    margin: 0px 3px 0px 3px;
     border: 1px solid #264b69;
     background-color: #1f364d; }
   QToolButton::menu-button {
