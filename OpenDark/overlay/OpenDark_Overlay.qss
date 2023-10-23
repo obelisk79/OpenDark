@@ -46,7 +46,7 @@ QListView {
 
 QListView::item,
 QTreeView::item {
-  background-color: rgba(12, 14, 16, 5%); }
+  background-color: rgba(12, 14, 16, 2%); }
 
 QListView::item:hover,
 QTreeView::item:hover {
