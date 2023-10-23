@@ -14,7 +14,6 @@
     <name>OpenDark</name>
     <description>An accessible and coordinated Dark theme for FreeCAD based on the wonderful Open-Color ui palette</description>
     <tag>2023</tag>
-    <tag>Theme</tag>
     <tag>dark</tag>
     <file>OpenDark.qss</file>
   </preferencepack>
