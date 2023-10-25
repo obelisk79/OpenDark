@@ -395,6 +395,10 @@ QTableWidget, QTableView {
 
 QTableView::item {
   color: #dee2e6; }
+  QTableView::item:selected {
+    background-color: #264b69; }
+  QTableView::item:indeterminate {
+    background-color: #ff00ff; }
 
 QTreeView {
   color: #dee2e6;
@@ -402,7 +406,12 @@ QTreeView {
   alternate-background-color: #212529;
   border: 1px solid transparent;
   border-radius: 2px;
-  selection-background-color: #1f364d; }
+  selection-color: #dee2e6;
+  selection-background-color: #1f364d;
+  show-decoration-selected: 0; }
+  QTreeView::item:selected {
+    color: #dee2e6;
+    background-color: #264b69; }
 
 QTreeView::branch {
   background: transparent; }
@@ -436,7 +445,7 @@ QTextEdit {
 QToolBar {
   background-color: #212529;
   margin-top: 6px;
-  padding: 1px;
+  padding: 0px;
   border-bottom: 1px solid #292f35; }
 
 QToolBarExtension {
