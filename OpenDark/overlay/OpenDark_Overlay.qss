@@ -13,7 +13,7 @@ QTabWidget::pane {
   */
 Gui--OverlayTabWidget {
   qproperty-effectColor: rgba(10, 11, 13, 65%);
-  qproperty-effectBlurRadius: 4.0;
+  qproperty-effectBlurRadius: 0.0;
   qproperty-effectOffsetX: 0.0;
   qproperty-effectOffsetY: 0.0;
   qproperty-effectWidth: 1;
@@ -28,7 +28,7 @@ QHeaderView {
 
 QHeaderView::section {
   color: #dee2e6;
-  background-color: rgba(10, 11, 13, 37%);
+  background-color: rgba(10, 11, 13, 18%);
   padding: 2px;
   padding-left: 8px;
   border: 1px solid #495057; }
@@ -46,15 +46,20 @@ QListView {
 
 QListView::item,
 QTreeView::item {
-  background-color: rgba(12, 14, 16, 2%); }
+  margin: 3px 0px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  background-color: #1a1e22; }
 
 QListView::item:hover,
 QTreeView::item:hover {
+  border: 1px solid #264b69;
   background-color: #1f364d; }
 
 QListView::item:selected,
 QTreeView::item:selected {
-  background-color: #339af0; }
+  border: 1px solid #264b69;
+  background-color: #264b69; }
 
 Gui--CallTipsList::item {
   background-color: #ff00ff; }
