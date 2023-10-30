@@ -91,3 +91,6 @@ QSint--ActionGroup QFrame[class="content"] {
 QSint--ActionGroup QFrame[class="content"] > QWidget {
   background-color: #212529;
   /* Task Panel background color */ }
+
+QComboBox QAbstractItemView {
+  background-color: #1a1e22; }
