@@ -335,7 +335,8 @@ QScrollBar {
     QScrollBar::handle:vertical {
       margin: 16px 3px; }
     QScrollBar::handle:horizontal {
-      margin: 3px 16px; }
+      margin: 3px 16px;
+      min-width: 8px; }
   QScrollBar::sub-line:vertical {
     margin: 3px 0px 3px 1px;
     /* 1px to correctly fit the 10px width image */
@@ -621,3 +622,6 @@ _ {
   Gui--OverlayToolButton[objectName="OBTN Float"]:hover,
   _:hover {
     image: url(qss:overlay/floathover_opendark.svg); }
+
+QToolButton#Std_Undo {
+  min-width: 80px; }
