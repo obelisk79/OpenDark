@@ -169,6 +169,14 @@ QGroupBox {
     padding-right: 12px;
     padding-top: 2px;
     padding-bottom: 2px; }
+  QGroupBox::indicator {
+    width: 12px;
+    height: 12px;
+    left: 6px;
+    border: 1px solid #495057;
+    border-radius: 2px; }
+    QGroupBox::indicator:checked {
+      image: url(qss:images_dark-light/checkbox_light.svg); }
 
 QHeaderView::section {
   background-color: #292f35;
