@@ -291,18 +291,18 @@ QMenuBar {
     border: 1px solid #264b69;
     border-radius: 2px; }
 
-QPushButton, QWidget#wbList QPushButton {
+QPushButton, QSint--ActionGroup QFrame[class="content"] QToolButton, QWidget#wbList QPushButton, QWidget#wbList QSint--ActionGroup QFrame[class="content"] QToolButton, QSint--ActionGroup QFrame[class="content"] QWidget#wbList QToolButton {
   min-width: 80px;
   padding: 4px 4px 4px 4px;
   border: 1px solid #1a1e22;
   background-color: #495057; }
-  QPushButton:hover, QWidget#wbList QPushButton:hover {
+  QPushButton:hover, QSint--ActionGroup QFrame[class="content"] QToolButton:hover, QWidget#wbList QPushButton:hover, QWidget#wbList QSint--ActionGroup QFrame[class="content"] QToolButton:hover, QSint--ActionGroup QFrame[class="content"] QWidget#wbList QToolButton:hover {
     border: 1px solid #264b69;
     background-color: #292f35; }
-  QPushButton:disabled, QWidget#wbList QPushButton:disabled {
+  QPushButton:disabled, QSint--ActionGroup QFrame[class="content"] QToolButton:disabled, QWidget#wbList QPushButton:disabled, QWidget#wbList QSint--ActionGroup QFrame[class="content"] QToolButton:disabled, QSint--ActionGroup QFrame[class="content"] QWidget#wbList QToolButton:disabled {
     color: #495057;
     background-color: #292f35; }
-  QPushButton:pressed, QWidget#wbList QPushButton:pressed {
+  QPushButton:pressed, QSint--ActionGroup QFrame[class="content"] QToolButton:pressed, QWidget#wbList QPushButton:pressed, QWidget#wbList QSint--ActionGroup QFrame[class="content"] QToolButton:pressed, QSint--ActionGroup QFrame[class="content"] QWidget#wbList QToolButton:pressed {
     background-color: #1f364d; }
 
 QRadioButton {
