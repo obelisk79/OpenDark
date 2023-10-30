@@ -423,7 +423,8 @@ QTreeView {
   selection-background-color: #1f364d;
   show-decoration-selected: 0; }
   QTreeView::item {
-    margin: 2px 0px; }
+    margin: 2px 0px;
+    padding: 0px 3px; }
   QTreeView::item:selected {
     color: #dee2e6;
     background-color: #264b69; }
@@ -578,50 +579,41 @@ Gui--PropertyEditor--PropertyEditor > QWidget > QWidget > QLabel {
   margin-left: 1px;
   max-height: 20px; }
 
-Gui--OverlayToolButton,
-_ {
+Gui--OverlayToolButton {
   background-color: transparent;
   border: 0px solid transparent;
   image: url(qss:overlay/close_opendark.svg); }
-  Gui--OverlayToolButton:hover,
-  _:hover {
+  Gui--OverlayToolButton:hover {
     background-color: transparent;
     border: 0px solid transparent;
     image: url(qss:overlay/closehover_opendark.svg); }
-  Gui--OverlayToolButton:pressed,
-  _:pressed {
+  Gui--OverlayToolButton:pressed {
     background-color: transparent;
     border: 0px solid transparent; }
 
-Gui--OverlayToolButton[objectName="OBTN Transparent"],
-_ {
+Gui--OverlayToolButton[objectName="OBTN Transparent"] {
   image: url(qss:overlay/transparent_opendark.svg); }
-  Gui--OverlayToolButton[objectName="OBTN Transparent"]:hover,
-  _:hover {
+  Gui--OverlayToolButton[objectName="OBTN Transparent"]:hover {
     image: url(qss:overlay/transparenthover_opendark.svg); }
 
-Gui--OverlayToolButton[objectName="OBTN Overlay"],
-_ {
+Gui--OverlayToolButton[objectName="OBTN Overlay"] {
   image: url(qss:overlay/overlay_opendark.svg); }
-  Gui--OverlayToolButton[objectName="OBTN Overlay"]:hover,
-  _:hover {
+  Gui--OverlayToolButton[objectName="OBTN Overlay"]:hover {
     image: url(qss:overlay/overlayhover_opendark.svg); }
 
-Gui--OverlayToolButton[objectName="OBTN AutoMode"],
-_ {
+Gui--OverlayToolButton[objectName="OBTN AutoMode"] {
   image: url(qss:overlay/mode_opendark.svg); }
-  Gui--OverlayToolButton[objectName="OBTN AutoMode"]:hover,
-  _:hover {
+  Gui--OverlayToolButton[objectName="OBTN AutoMode"]:hover {
     image: url(qss:overlay/modehover_opendark.svg); }
 
 Gui--OverlaySplitterHandle Gui--OverlayToolButton,
-Gui--OverlayToolButton[objectName="OBTN Float"],
-_ {
+Gui--OverlayToolButton[objectName="OBTN Float"] {
   image: url(qss:overlay/float_opendark.svg); }
   Gui--OverlaySplitterHandle Gui--OverlayToolButton:hover,
-  Gui--OverlayToolButton[objectName="OBTN Float"]:hover,
-  _:hover {
+  Gui--OverlayToolButton[objectName="OBTN Float"]:hover {
     image: url(qss:overlay/floathover_opendark.svg); }
 
-QToolButton#Std_Undo {
-  min-width: 80px; }
+Gui--NotificationLabel {
+  background-color: #1a1e22;
+  border: 1px solid #292f35;
+  border-radius: 2px; }
