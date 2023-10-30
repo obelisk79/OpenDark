@@ -35,7 +35,7 @@ QAbstractSpinBox {
     border: 1px solid #495057;
     border-radius: 0px;
     border-top-right-radius: 2px; }
-    QAbstractSpinBox::up-button:hover, QPushButton:focus::up-button, QSint--ActionGroup QFrame[class="content"] QToolButton:focus::up-button, QWidget#wbList QPushButton:focus::up-button, QWidget#wbList QSint--ActionGroup QFrame[class="content"] QToolButton:focus::up-button, QSint--ActionGroup QFrame[class="content"] QWidget#wbList QToolButton:focus::up-button {
+    QAbstractSpinBox::up-button:hover {
       background-color: #292f35;
       border: 1px solid #292f35; }
     QAbstractSpinBox::up-button:pressed {
@@ -54,7 +54,7 @@ QAbstractSpinBox {
     border: 1px solid #495057;
     border-radius: 0px;
     border-bottom-right-radius: 2px; }
-    QAbstractSpinBox::down-button:hover, QPushButton:focus::down-button, QSint--ActionGroup QFrame[class="content"] QToolButton:focus::down-button, QWidget#wbList QPushButton:focus::down-button, QWidget#wbList QSint--ActionGroup QFrame[class="content"] QToolButton:focus::down-button, QSint--ActionGroup QFrame[class="content"] QWidget#wbList QToolButton:focus::down-button {
+    QAbstractSpinBox::down-button:hover {
       background-color: #292f35;
       border: 1px solid #292f35; }
     QAbstractSpinBox::down-button:pressed {
@@ -96,7 +96,7 @@ QCheckBox {
     border-radius: 2px; }
     QCheckBox::indicator:disabled {
       background-color: #292f35; }
-    QCheckBox::indicator:hover, QPushButton:focus::indicator, QSint--ActionGroup QFrame[class="content"] QToolButton:focus::indicator, QWidget#wbList QPushButton:focus::indicator, QWidget#wbList QSint--ActionGroup QFrame[class="content"] QToolButton:focus::indicator, QSint--ActionGroup QFrame[class="content"] QWidget#wbList QToolButton:focus::indicator {
+    QCheckBox::indicator:hover {
       border: 1px solid #264b69; }
     QCheckBox::indicator:checked {
       image: url(qss:images_dark-light/checkbox_light.svg);
@@ -124,7 +124,7 @@ QComboBox {
     border-bottom-right-radius: 2px; }
     QComboBox::drop-down:disabled {
       background-color: #292f35; }
-    QComboBox::drop-down:hover, QPushButton:focus::drop-down, QSint--ActionGroup QFrame[class="content"] QToolButton:focus::drop-down, QWidget#wbList QPushButton:focus::drop-down, QWidget#wbList QSint--ActionGroup QFrame[class="content"] QToolButton:focus::drop-down, QSint--ActionGroup QFrame[class="content"] QWidget#wbList QToolButton:focus::drop-down {
+    QComboBox::drop-down:hover {
       background-color: #292f35; }
     QComboBox::drop-down:pressed {
       background-color: #1f364d; }
@@ -225,7 +225,7 @@ QMainWindow {
   QMainWindow::separator {
     border: 0px solid transparent;
     background-color: #292f35; }
-    QMainWindow::separator:hover, QPushButton:focus::separator, QSint--ActionGroup QFrame[class="content"] QToolButton:focus::separator, QWidget#wbList QPushButton:focus::separator, QWidget#wbList QSint--ActionGroup QFrame[class="content"] QToolButton:focus::separator, QSint--ActionGroup QFrame[class="content"] QWidget#wbList QToolButton:focus::separator {
+    QMainWindow::separator:hover {
       background-color: #1f364d; }
     QMainWindow::separator:vertical {
       width: 4px; }
@@ -291,12 +291,15 @@ QMenuBar {
     border: 1px solid #264b69;
     border-radius: 2px; }
 
-QPushButton, QSint--ActionGroup QFrame[class="content"] QToolButton, QWidget#wbList QPushButton, QWidget#wbList QSint--ActionGroup QFrame[class="content"] QToolButton, QSint--ActionGroup QFrame[class="content"] QWidget#wbList QToolButton, QPushButton:focus {
+QPushButton, QSint--ActionGroup QFrame[class="content"] QToolButton, QWidget#wbList QPushButton, QWidget#wbList QSint--ActionGroup QFrame[class="content"] QToolButton, QSint--ActionGroup QFrame[class="content"] QWidget#wbList QToolButton {
   min-width: 80px;
   padding: 4px 4px 4px 4px;
   border: 1px solid #1a1e22;
   background-color: #495057; }
-  QPushButton:hover, QSint--ActionGroup QFrame[class="content"] QToolButton:hover, QWidget#wbList QPushButton:hover, QWidget#wbList QSint--ActionGroup QFrame[class="content"] QToolButton:hover, QSint--ActionGroup QFrame[class="content"] QWidget#wbList QToolButton:hover, QPushButton:focus, QSint--ActionGroup QFrame[class="content"] QToolButton:focus, QWidget#wbList QPushButton:focus, QWidget#wbList QSint--ActionGroup QFrame[class="content"] QToolButton:focus, QSint--ActionGroup QFrame[class="content"] QWidget#wbList QToolButton:focus {
+  QPushButton:hover, QSint--ActionGroup QFrame[class="content"] QToolButton:hover, QWidget#wbList QPushButton:hover, QWidget#wbList QSint--ActionGroup QFrame[class="content"] QToolButton:hover, QSint--ActionGroup QFrame[class="content"] QWidget#wbList QToolButton:hover {
+    border: 1px solid #264b69;
+    background-color: #292f35; }
+  QPushButton:focus, QSint--ActionGroup QFrame[class="content"] QToolButton:focus, QWidget#wbList QPushButton:focus, QWidget#wbList QSint--ActionGroup QFrame[class="content"] QToolButton:focus, QSint--ActionGroup QFrame[class="content"] QWidget#wbList QToolButton:focus {
     border: 1px solid #264b69;
     background-color: #292f35; }
   QPushButton:disabled, QSint--ActionGroup QFrame[class="content"] QToolButton:disabled, QWidget#wbList QPushButton:disabled, QWidget#wbList QSint--ActionGroup QFrame[class="content"] QToolButton:disabled, QSint--ActionGroup QFrame[class="content"] QWidget#wbList QToolButton:disabled {
@@ -326,7 +329,7 @@ QScrollBar {
     background-color: #495057;
     border: 1px solid transparent;
     border-radius: 3px; }
-    QScrollBar::handle:hover, QPushButton:focus::handle, QSint--ActionGroup QFrame[class="content"] QToolButton:focus::handle, QWidget#wbList QPushButton:focus::handle, QWidget#wbList QSint--ActionGroup QFrame[class="content"] QToolButton:focus::handle, QSint--ActionGroup QFrame[class="content"] QWidget#wbList QToolButton:focus::handle {
+    QScrollBar::handle:hover {
       background-color: #1f364d;
       border: 1px solid #264b69; }
     QScrollBar::handle:vertical {
@@ -385,7 +388,7 @@ QTabBar {
     background-color: #495057;
     border: 0px solid transparent;
     border-radius: 4px; }
-    QTabBar::tab:hover, QPushButton:focus::tab, QSint--ActionGroup QFrame[class="content"] QToolButton:focus::tab, QWidget#wbList QPushButton:focus::tab, QWidget#wbList QSint--ActionGroup QFrame[class="content"] QToolButton:focus::tab, QSint--ActionGroup QFrame[class="content"] QWidget#wbList QToolButton:focus::tab {
+    QTabBar::tab:hover {
       background-color: #1f364d; }
     QTabBar::tab:selected {
       background-color: #264b69; }
@@ -526,7 +529,7 @@ QSint--ActionGroup QFrame[class="header"] {
   margin: 0px;
   padding: 0px; }
 
-QSint--ActionGroup QFrame[class="header"]:hover, QSint--ActionGroup QPushButton[class="header"]:focus, QSint--ActionGroup QFrame[class="content"] QToolButton[class="header"]:focus, QSint--ActionGroup QWidget#wbList QPushButton[class="header"]:focus, QSint--ActionGroup QWidget#wbList QFrame[class="content"] QToolButton[class="header"]:focus, QSint--ActionGroup QFrame[class="content"] QWidget#wbList QToolButton[class="header"]:focus, QWidget#wbList QSint--ActionGroup QPushButton[class="header"]:focus, QWidget#wbList QSint--ActionGroup QFrame[class="content"] QToolButton[class="header"]:focus {
+QSint--ActionGroup QFrame[class="header"]:hover {
   background-color: #292f35;
   border-bottom: 3px solid #264b69; }
 
@@ -592,21 +595,21 @@ _ {
 Gui--OverlayToolButton[objectName="OBTN Transparent"],
 _ {
   image: url(qss:overlay/transparent_opendark.svg); }
-  Gui--OverlayToolButton[objectName="OBTN Transparent"]:hover, QPushButton[objectName="OBTN Transparent"]:focus, QSint--ActionGroup QFrame[class="content"] QToolButton[objectName="OBTN Transparent"]:focus, QWidget#wbList QPushButton[objectName="OBTN Transparent"]:focus, QWidget#wbList QSint--ActionGroup QFrame[class="content"] QToolButton[objectName="OBTN Transparent"]:focus, QSint--ActionGroup QFrame[class="content"] QWidget#wbList QToolButton[objectName="OBTN Transparent"]:focus,
+  Gui--OverlayToolButton[objectName="OBTN Transparent"]:hover,
   _:hover {
     image: url(qss:overlay/transparenthover_opendark.svg); }
 
 Gui--OverlayToolButton[objectName="OBTN Overlay"],
 _ {
   image: url(qss:overlay/overlay_opendark.svg); }
-  Gui--OverlayToolButton[objectName="OBTN Overlay"]:hover, QPushButton[objectName="OBTN Overlay"]:focus, QSint--ActionGroup QFrame[class="content"] QToolButton[objectName="OBTN Overlay"]:focus, QWidget#wbList QPushButton[objectName="OBTN Overlay"]:focus, QWidget#wbList QSint--ActionGroup QFrame[class="content"] QToolButton[objectName="OBTN Overlay"]:focus, QSint--ActionGroup QFrame[class="content"] QWidget#wbList QToolButton[objectName="OBTN Overlay"]:focus,
+  Gui--OverlayToolButton[objectName="OBTN Overlay"]:hover,
   _:hover {
     image: url(qss:overlay/overlayhover_opendark.svg); }
 
 Gui--OverlayToolButton[objectName="OBTN AutoMode"],
 _ {
   image: url(qss:overlay/mode_opendark.svg); }
-  Gui--OverlayToolButton[objectName="OBTN AutoMode"]:hover, QPushButton[objectName="OBTN AutoMode"]:focus, QSint--ActionGroup QFrame[class="content"] QToolButton[objectName="OBTN AutoMode"]:focus, QWidget#wbList QPushButton[objectName="OBTN AutoMode"]:focus, QWidget#wbList QSint--ActionGroup QFrame[class="content"] QToolButton[objectName="OBTN AutoMode"]:focus, QSint--ActionGroup QFrame[class="content"] QWidget#wbList QToolButton[objectName="OBTN AutoMode"]:focus,
+  Gui--OverlayToolButton[objectName="OBTN AutoMode"]:hover,
   _:hover {
     image: url(qss:overlay/modehover_opendark.svg); }
 
@@ -616,10 +619,5 @@ _ {
   image: url(qss:overlay/float_opendark.svg); }
   Gui--OverlaySplitterHandle Gui--OverlayToolButton:hover,
   Gui--OverlayToolButton[objectName="OBTN Float"]:hover,
-  QPushButton[objectName="OBTN Float"]:focus,
-  QSint--ActionGroup QFrame[class="content"] QToolButton[objectName="OBTN Float"]:focus,
-  QWidget#wbList QPushButton[objectName="OBTN Float"]:focus,
-  QWidget#wbList QSint--ActionGroup QFrame[class="content"] QToolButton[objectName="OBTN Float"]:focus,
-  QSint--ActionGroup QFrame[class="content"] QWidget#wbList QToolButton[objectName="OBTN Float"]:focus,
   _:hover {
     image: url(qss:overlay/floathover_opendark.svg); }
