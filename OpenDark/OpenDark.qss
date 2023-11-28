@@ -9,6 +9,11 @@
   background-color: #212529;
   dialogbuttonbox-buttons-have-icons: 0; }
 
+/* specific reset for elements inside QToolBar */
+QToolBar * {
+  margin: 0px;
+  padding: 0px; }
+
 QAbstractSpinBox {
   max-height: 20px;
   margin: 0px;
@@ -213,7 +218,7 @@ QLineEdit {
     border: 1px solid #264b69; }
 
 QListView {
-  padding: 8px;
+  padding: 0px 8px 0px 8px;
   background-color: #1a1e22;
   alternate-background-color: #1a1e22; }
 
@@ -310,7 +315,8 @@ QPushButton, QSint--ActionGroup QFrame[class="content"] QToolButton, QWidget#wbL
 
 QRadioButton {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+  margin: 2px; }
   QRadioButton::indicator {
     top: 1px;
     height: 13px;
@@ -333,7 +339,8 @@ QScrollBar {
       background-color: #1f364d;
       border: 1px solid #264b69; }
     QScrollBar::handle:vertical {
-      margin: 16px 3px; }
+      margin: 16px 3px;
+      min-height: 12px; }
     QScrollBar::handle:horizontal {
       margin: 3px 16px;
       min-width: 8px; }
@@ -400,6 +407,12 @@ QTabBar {
     background-image: url(qss:images_dark-light/close_light.svg);
     background-position: center center;
     background-repeat: none; }
+  QTabBar::scroller {
+    width: 60px; }
+
+QTabBar QToolButton {
+  /* the scroll buttons are tool buttons */
+  border: 1px solid #495057; }
 
 QTableWidget, QTableView {
   background-color: #1a1e22;
@@ -453,6 +466,10 @@ QTreeView::branch:open:has-children:has-siblings {
 QTreeView::branch:open:has-children:!has-siblings {
   border-image: url(qss:images_dark-light/branch_end_open_OpenDark.svg) 0; }
 
+QTreeView QLineEdit {
+  padding: 0px;
+  margin: 0px; }
+
 QTextEdit {
   background-color: #1a1e22;
   border: 1px solid #292f35;
@@ -484,6 +501,8 @@ QToolButton {
   QToolButton:pressed {
     margin: 0px 3px 0px 3px;
     border: 1px solid #264b69;
+    background-color: #1f364d; }
+  QToolButton:checked {
     background-color: #1f364d; }
   QToolButton::menu-button {
     border: 0px solid transparent;
@@ -568,6 +587,9 @@ QSint--ActionGroup QFrame[class="content"] QTreeView QAbstractSpinBox {
   margin: 0px;
   padding: 0px 0px 1px 0px; }
 
+QDialog#Gui__Dialog__DlgPreferences QComboBox {
+  max-height: 22px; }
+
 Gui--PropertyEditor--PropertyEditor {
   gridline-color: #495057;
   qproperty-groupBackground: #495057; }
@@ -617,3 +639,6 @@ Gui--NotificationLabel {
   background-color: #1a1e22;
   border: 1px solid #292f35;
   border-radius: 2px; }
+
+QToolButton#buttonPauseUpdate {
+  qproperty-icon: url(qss:images_dark-light/stop.png); }
