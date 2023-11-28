@@ -12,8 +12,8 @@ QTabWidget::pane {
   Gui--OverlayTabWidget#OverlayLeft {}
   */
 Gui--OverlayTabWidget {
-  qproperty-effectColor: rgba(10, 11, 13, 65%);
-  qproperty-effectBlurRadius: 0.0;
+  qproperty-effectColor: rgba(33, 37, 41, 37%);
+  qproperty-effectBlurRadius: 4.0;
   qproperty-effectOffsetX: 0.0;
   qproperty-effectOffsetY: 0.0;
   qproperty-effectWidth: 1;
@@ -84,6 +84,9 @@ QScrollArea#ClippingScrollArea,
 QWidget#ClippingScrollAreaContents {
   background-color: #ff00ff; }
 
+QSint--ActionGroup QFrame[class="header"] {
+  background-color: rgba(33, 37, 41, 80%); }
+
 QSint--ActionGroup QFrame[class="content"] {
   background-color: #1a1e22;
   /* Task Panel background color */ }
@@ -94,3 +97,12 @@ QSint--ActionGroup QFrame[class="content"] > QWidget {
 
 QComboBox QAbstractItemView {
   background-color: #1a1e22; }
+
+QAbstractSpinBox {
+  margin: 3px 6px 3px 6px; }
+
+QTreeView::indicator {
+  border: 1px solid #495057; }
+
+QTreeView::indicator:checked {
+  image: url(qss:images_dark-light/check_light.svg); }
