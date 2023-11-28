@@ -19,7 +19,7 @@
   </preferencepack>
   <workbench>
     <name>QtNormalizer</name>
-    <description>Sets Qt Widget visual style to normalize appearance across disparate compute r platforms</description>
+    <description>Sets Qt Widget visual style to normalize appearance across disparate computer platforms</description>
     <classname>QtNormalizer</classname>
   </workbench>
 </content>
