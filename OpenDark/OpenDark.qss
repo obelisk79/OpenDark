@@ -275,7 +275,7 @@ QMenu {
     margin: 0px 10px; }
 
 QMenuBar {
-  padding: 2px 0px 2px 0px;
+  padding: 3px 0px 3px 0px;
   color: #adb5bd;
   background-color: #1a1e22;
   border-bottom: 1px solid #292f35; }
@@ -480,12 +480,35 @@ QToolBar {
   margin-top: 6px;
   padding: 0px;
   border-bottom: 1px solid #292f35; }
+  QToolBar::separator {
+    background-color: #495057; }
+    QToolBar::separator:vertical {
+      height: 1px;
+      margin: 4px 6px; }
+    QToolBar::separator:horizontal {
+      width: 1px;
+      margin: 6px 4px; }
 
 QToolBarExtension {
   border: 1px solid transparent;
   min-width: 16px;
   background-color: transparent;
   qproperty-icon: url(qss:images_dark-light/light_expand.svg); }
+
+QToolButton[popupMode="0"] {
+  /* Only for InstantPopup */
+  padding-right: -20px;
+  margin-right: -20px; }
+
+QToolButton[popupMode="1"] {
+  /* Only for InstantPopup */
+  padding-right: -20px;
+  margin-right: -20px; }
+
+QToolButton[popupMode="2"] {
+  /* Only for InstantPopup */
+  padding-right: -20px;
+  margin-right: -20px; }
 
 QToolButton {
   margin: 0px 3px 0px 3px;
@@ -505,10 +528,25 @@ QToolButton {
   QToolButton:checked {
     background-color: #1f364d; }
   QToolButton::menu-button {
-    border: 0px solid transparent;
-    padding-right: 2px;
-    padding-top: 2px;
-    width: 12px; }
+    border-bottom: 0px solid #ffffff;
+    border-radius: 2px;
+    width: 1.6ex;
+    padding: 0px;
+    border-radius: 2px;
+    border: 0px solid #ff00ff;
+    subcontrol-origin: margin;
+    subcontrol-position: right bottom; }
+  QToolButton::menu-arrow {
+    image: url(qss:images_dark-light/more_arrow_light.svg);
+    width: 1.5ex;
+    height: 1.5ex;
+    subcontrol-origin: content;
+    subcontrol-position: right bottom;
+    background: transparent; }
+  QToolButton::menu-indicator {
+    /* Exclude a shift for better image */
+    subcontrol-origin: padding;
+    /* Shift it a bit */ }
 
 QToolTip {
   padding: 4px;
@@ -532,7 +570,7 @@ QWidget#wbList * {
   background-color: transparent; }
 
 QToolBar > QToolButton#qt_toolbutton_menubutton {
-  padding-right: 16px;
+  padding-right: 0px;
   /* add more width to buttons with menu */ }
 
 /*==================================================================================================
@@ -642,3 +680,22 @@ Gui--NotificationLabel {
 
 QToolButton#buttonPauseUpdate {
   qproperty-icon: url(qss:images_dark-light/stop.png); }
+
+QTabWidget#TabBar > QTabBar {
+  border: 0px solid transparent;
+  background-color: transparent; }
+
+QTabWidget#TabBar > QTabBar::tab:top,
+QTabWidget#TabBar > QTabBar::tab:bottom {
+  margin: 0px 2px 4px 2px;
+  min-width: -1; }
+
+QWidget#Tabs {
+  margin: 0px;
+  margin-left: 6px;
+  padding-top: 0px;
+  background-color: transparent;
+  border: 0px solid transparent; }
+
+QWidget[objectName="BIM Views Manager"] QPushButton, QWidget[objectName="BIM Views Manager"] QWidget#wbList QPushButton, QWidget#wbList QWidget[objectName="BIM Views Manager"] QPushButton, QWidget[objectName="BIM Views Manager"] QSint--ActionGroup QFrame[class="content"] QToolButton, QSint--ActionGroup QFrame[class="content"] QWidget[objectName="BIM Views Manager"] QToolButton, QWidget[objectName="BIM Views Manager"] QWidget#wbList QSint--ActionGroup QFrame[class="content"] QToolButton, QWidget#wbList QSint--ActionGroup QFrame[class="content"] QWidget[objectName="BIM Views Manager"] QToolButton, QWidget[objectName="BIM Views Manager"] QSint--ActionGroup QFrame[class="content"] QWidget#wbList QToolButton, QSint--ActionGroup QFrame[class="content"] QWidget#wbList QWidget[objectName="BIM Views Manager"] QToolButton {
+  min-width: 24px; }
