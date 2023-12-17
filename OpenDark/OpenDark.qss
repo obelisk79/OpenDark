@@ -9,11 +9,6 @@
   background-color: #212529;
   dialogbuttonbox-buttons-have-icons: 0; }
 
-/* specific reset for elements inside QToolBar */
-QToolBar * {
-  margin: 0px;
-  padding: 0px; }
-
 QAbstractSpinBox {
   max-height: 20px;
   margin: 0px;
@@ -477,9 +472,16 @@ QTextEdit {
 
 QToolBar {
   background-color: #212529;
-  margin-top: 6px;
-  padding: 0px;
+  padding: 2px;
   border-bottom: 1px solid #292f35; }
+  QToolBar * {
+    margin: 0;
+    padding: 0; }
+  QToolBar QTabBar::tab {
+    margin-top: -1px;
+    padding-top: 6px; }
+  QToolBar QPushButton, QToolBar QSint--ActionGroup QFrame[class="content"] QToolButton, QSint--ActionGroup QFrame[class="content"] QToolBar QToolButton, QToolBar QWidget#wbList QPushButton, QToolBar QWidget#wbList QSint--ActionGroup QFrame[class="content"] QToolButton, QSint--ActionGroup QFrame[class="content"] QToolBar QWidget#wbList QToolButton, QWidget#wbList QToolBar QPushButton, QWidget#wbList QToolBar QSint--ActionGroup QFrame[class="content"] QToolButton, QSint--ActionGroup QFrame[class="content"] QWidget#wbList QToolBar QToolButton {
+    padding: 3px; }
   QToolBar::separator {
     background-color: #495057; }
     QToolBar::separator:vertical {
@@ -495,34 +497,25 @@ QToolBarExtension {
   background-color: transparent;
   qproperty-icon: url(qss:images_dark-light/light_expand.svg); }
 
-QToolButton[popupMode="0"] {
-  /* Only for InstantPopup */
-  padding-right: -20px;
-  margin-right: -20px; }
-
-QToolButton[popupMode="1"] {
-  /* Only for InstantPopup */
-  padding-right: -20px;
-  margin-right: -20px; }
-
-QToolButton[popupMode="2"] {
+QToolButton[popupMode="0"], QToolButton[popupMode="1"], QToolButton[popupMode="2"] {
   /* Only for InstantPopup */
   padding-right: -20px;
   margin-right: -20px; }
 
 QToolButton {
-  margin: 0px 3px 0px 3px;
-  padding: 0px 0px 0px 0px;
+  margin: 0px 2px 0px 2px;
+  padding: 2px;
   border: 1px solid transparent;
-  border-radius: 2px; }
+  border-radius: 2px;
+  border-radius: 4px; }
   QToolButton:hover {
-    margin: 0px 3px 0px 3px;
-    border: 1px solid #264b69; }
+    margin: 0px 2px 0px 2px;
+    background: #495057; }
   QToolButton:focus {
-    margin: 0px 3px 0px 3px;
+    margin: 0px 2px 0px 2px;
     border: 1px solid #264b69; }
   QToolButton:pressed {
-    margin: 0px 3px 0px 3px;
+    margin: 0px 2px 0px 2px;
     border: 1px solid #264b69;
     background-color: #1f364d; }
   QToolButton:checked {
@@ -537,7 +530,7 @@ QToolButton {
     subcontrol-origin: margin;
     subcontrol-position: right bottom; }
   QToolButton::menu-arrow {
-    image: url(qss:images_dark-light/more_arrow_light.svg);
+    image: url(qss:images_dark-light/light_more_arrow.svg);
     width: 1.5ex;
     height: 1.5ex;
     subcontrol-origin: content;
@@ -547,6 +540,9 @@ QToolButton {
     /* Exclude a shift for better image */
     subcontrol-origin: padding;
     /* Shift it a bit */ }
+
+QToolBar > QToolButton#qt_toolbutton_menubutton {
+  padding-right: 2px; }
 
 QToolTip {
   padding: 4px;
@@ -568,10 +564,6 @@ QToolBar > Gui--WorkbenchComboBox QAbstractItemView {
 
 QWidget#wbList * {
   background-color: transparent; }
-
-QToolBar > QToolButton#qt_toolbutton_menubutton {
-  padding-right: 0px;
-  /* add more width to buttons with menu */ }
 
 /*==================================================================================================
 Tasks panel (custom FreeCAD class)

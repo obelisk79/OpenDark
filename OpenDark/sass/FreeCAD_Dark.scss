@@ -570,9 +570,25 @@ QTextEdit {
 
 QToolBar {
     background-color: $main-bg;
-    margin-top: 6px;
-    padding: 0px;
+    padding: 2px;
     border-bottom: 1px solid $softborder;
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    QTabBar {
+        &::tab { 
+            margin-top: -1px;
+            padding-top: 6px;
+        }
+    }
+
+    QPushButton {
+        padding: 3px;
+    }
+
     &::separator {
         background-color: $hardborder;
         &:vertical {
@@ -593,19 +609,7 @@ QToolBarExtension {
     qproperty-icon: url(qss:images_dark-light/light_expand.svg);
 }
 
-QToolButton[popupMode="0"] {
-    /* Only for InstantPopup */
-    padding-right: -20px;
-    margin-right: -20px;
-}
-
-  QToolButton[popupMode="1"] {
-    /* Only for InstantPopup */
-    padding-right: -20px;
-    margin-right: -20px;  
-}
-
-  QToolButton[popupMode="2"] {
+QToolButton[popupMode="0"], QToolButton[popupMode="1"], QToolButton[popupMode="2"] {
     /* Only for InstantPopup */
     padding-right: -20px;
     margin-right: -20px;
@@ -613,24 +617,31 @@ QToolButton[popupMode="0"] {
 
 QToolButton {
     margin: 0px 3px 0px 3px;
-    padding: 0px 0px 0px 0px;
+    padding: 2px;
+    
     @include noborder;
+    border-radius: 4px;
+    
     &:hover {
         margin: 0px 3px 0px 3px;
-        border: 1px solid $accent-border;
+        background: $control-bg;
     }
+    
     &:focus {
         margin: 0px 3px 0px 3px;
         border: 1px solid $accent-border;
     }
+    
     &:pressed {
         margin: 0px 3px 0px 3px;
         border: 1px solid $accent-border;
         background-color: $accent-bg;
     }
+    
     &:checked {
         background-color: $accent-bg;
     }
+
     &::menu-button {
         border-bottom: 0px solid #ffffff;
         border-radius: 2px;
@@ -642,19 +653,24 @@ QToolButton {
         subcontrol-origin: margin;
         subcontrol-position: right bottom;
     }
+
     &::menu-arrow {
-        image: url(qss:images_dark-light/more_arrow_light.svg);
         width: 1.5ex;
         height: 1.5ex;
         subcontrol-origin: content;
         subcontrol-position: right bottom;
         background: transparent;
     }
+
     &::menu-indicator {
         /* Exclude a shift for better image */
         subcontrol-origin: padding;
         /* Shift it a bit */
     }
+}
+
+QToolBar > QToolButton#qt_toolbutton_menubutton {
+    padding-right: 2px;
 }
 
 QToolTip {
@@ -687,10 +703,6 @@ QWidget#wbList * {
 
 QWidget#wbList QPushButton {
     @extend QPushButton;
-}
-
-QToolBar > QToolButton#qt_toolbutton_menubutton {
-    padding-right: 0px; /* add more width to buttons with menu */
 }
 
 /*==================================================================================================
