@@ -247,7 +247,7 @@ QLineEdit {
 }
 
 QListView {
-    padding: 8px;
+    padding: 0px 8px 0px 8px;
     background-color: $contrast-bg;
     alternate-background-color: $contrast-bg;
 }
@@ -322,7 +322,7 @@ QMenu {
 } 
 
 QMenuBar {
-    padding: 2px 0px 2px 0px;
+    padding: 3px 0px 3px 0px;
     color: $softtext;
     background-color: $contrast-bg;
     border-bottom: 1px solid $softborder;
@@ -350,7 +350,7 @@ QMenuBar {
 }
 
 QPushButton {
-    min-width: 80px;
+    min-width: 26px;
     padding: 4px 4px 4px 4px;
     border: 1px solid $contrast-bg;
     background-color: $control-bg;
@@ -373,6 +373,7 @@ QPushButton {
 
 QRadioButton {
     @include space0px;
+    margin: 2px;
     &::indicator {
         top: 1px;
         height: 13px;
@@ -399,6 +400,7 @@ QScrollBar {
         }
         &:vertical {
             margin: 16px 3px;
+            min-height: 12px;
         }
         &:horizontal{
             margin: 3px 16px;
@@ -477,6 +479,13 @@ QTabBar {
         background-position: center center;
         background-repeat: none;
     }
+    &::scroller {
+       width: 60px;
+    }
+}
+
+QTabBar QToolButton { /* the scroll buttons are tool buttons */
+    border: 1px solid $hardborder;
 }
 
 QTableWidget {
@@ -549,6 +558,11 @@ QTreeView::branch:open:has-children:!has-siblings  {
     border-image: url(qss:images_dark-light/branch_end_open_OpenDark.svg) 0;
 }
 
+QTreeView QLineEdit {
+    padding: 0px;
+    margin: 0px;
+}
+
 QTextEdit {
     background-color: $contrast-bg;
     @include softborder;
@@ -559,6 +573,17 @@ QToolBar {
     margin-top: 6px;
     padding: 0px;
     border-bottom: 1px solid $softborder;
+    &::separator {
+        background-color: $hardborder;
+        &:vertical {
+            height: 1px;
+            margin: 4px 6px;
+        }
+        &:horizontal {
+            width: 1px;
+            margin: 6px 4px;
+        }
+    }
 }
 
 QToolBarExtension {
@@ -566,6 +591,24 @@ QToolBarExtension {
     min-width: 16px;
     background-color: transparent;
     qproperty-icon: url(qss:images_dark-light/light_expand.svg);
+}
+
+QToolButton[popupMode="0"] {
+    /* Only for InstantPopup */
+    padding-right: -20px;
+    margin-right: -20px;
+}
+
+  QToolButton[popupMode="1"] {
+    /* Only for InstantPopup */
+    padding-right: -20px;
+    margin-right: -20px;  
+}
+
+  QToolButton[popupMode="2"] {
+    /* Only for InstantPopup */
+    padding-right: -20px;
+    margin-right: -20px;
 }
 
 QToolButton {
@@ -585,11 +628,32 @@ QToolButton {
         border: 1px solid $accent-border;
         background-color: $accent-bg;
     }
+    &:checked {
+        background-color: $accent-bg;
+    }
     &::menu-button {
-        border: 0px solid transparent;
-        padding-right: 2px;
-        padding-top: 2px;
-        width: 12px;
+        border-bottom: 0px solid #ffffff;
+        border-radius: 2px;
+        width: 1.6ex;
+        padding: 0px;
+
+        border-radius: 2px;
+        border: 0px solid #ff00ff;
+        subcontrol-origin: margin;
+        subcontrol-position: right bottom;
+    }
+    &::menu-arrow {
+        image: url(qss:images_dark-light/more_arrow_light.svg);
+        width: 1.5ex;
+        height: 1.5ex;
+        subcontrol-origin: content;
+        subcontrol-position: right bottom;
+        background: transparent;
+    }
+    &::menu-indicator {
+        /* Exclude a shift for better image */
+        subcontrol-origin: padding;
+        /* Shift it a bit */
     }
 }
 
@@ -626,7 +690,7 @@ QWidget#wbList QPushButton {
 }
 
 QToolBar > QToolButton#qt_toolbutton_menubutton {
-    padding-right: 16px; /* add more width to buttons with menu */
+    padding-right: 0px; /* add more width to buttons with menu */
 }
 
 /*==================================================================================================
@@ -689,6 +753,9 @@ QSint--ActionGroup QFrame[class="content"] QTreeView QAbstractSpinBox {
     padding: 0px 0px 1px 0px;
 }
 
+QDialog#Gui__Dialog__DlgPreferences QComboBox {
+    max-height: 22px;
+}
 
 Gui--PropertyEditor--PropertyEditor {
     gridline-color: $hardborder;  
@@ -754,4 +821,27 @@ QSint--ActionGroup QFrame[class="content"] QToolButton {
 Gui--NotificationLabel {
     background-color: $contrast-bg;
     @include softborder;
+}
+
+QToolButton#buttonPauseUpdate { //this is the cancel cache update button in addon-manager
+    qproperty-icon: url(qss:images_dark-light/stop.png);
+}
+
+QTabWidget#TabBar > QTabBar {
+    border: 0px solid transparent;
+    background-color: transparent;
+}
+
+QTabWidget#TabBar > QTabBar::tab:top,
+QTabWidget#TabBar > QTabBar::tab:bottom {
+    margin: 0px 2px 4px 2px;
+    min-width: -1;
+}
+
+QWidget#Tabs {
+    margin: 0px;
+    margin-left: 6px;
+    padding-top: 0px;
+    background-color: transparent;
+    border: 0px solid transparent;
 }
